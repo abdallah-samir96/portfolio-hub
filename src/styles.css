@@ -1,0 +1,105 @@
+
+body{
+  margin:0;
+  transition:.3s;
+}
+.light-mode{
+  background:#f8f9fa;
+  color:#212529;
+}
+.dark-mode{
+  background:#121212;
+  color:#fff;
+}
+.dark-mode .card{
+  background:#1e1e1e;
+  color:#fff;
+}
+.hero{
+  min-height:60vh;
+  display:flex;
+  align-items:center;
+  background:linear-gradient(135deg,#0d6efd,#6610f2);
+  color:white;
+}
+.social a{
+  color:white;
+  font-size:2rem;
+  margin:0 12px;
+}
+.section-title{
+  margin-bottom:25px;
+  font-weight:bold;
+}
+.timeline{
+  border-left:4px solid #0d6efd;
+  padding-left:25px;
+}
+.timeline-item{
+  position:relative;
+  margin-bottom:30px;
+}
+.timeline-item::before{
+  content:'';
+  position:absolute;
+  left:-34px;
+  top:5px;
+  width:16px;
+  height:16px;
+  border-radius:50%;
+  background:#0d6efd;
+}
+
+.floating-btn {
+  position: fixed;
+  bottom: 25px;
+  width: 58px;
+  height: 58px;
+  border: none;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 1.5rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.floating-btn:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);
+}
+
+.floating-btn:active {
+  transform: scale(0.95);
+}
+
+.whatsapp-btn {
+  left: 25px;
+  background-color: #25d366;
+}
+
+.top-btn {
+  right: 25px;
+  background-color: #0d6efd;
+}
+
+@media (max-width: 768px) {
+  .floating-btn {
+    width: 52px;
+    height: 52px;
+    font-size: 1.3rem;
+    bottom: 20px;
+  }
+
+  .whatsapp-btn {
+    left: 15px;
+  }
+
+  .top-btn {
+    right: 15px;
+  }
+}
