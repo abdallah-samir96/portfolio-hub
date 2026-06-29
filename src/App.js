@@ -20,7 +20,6 @@ export default function App() {
         <Experience />
         <Projects />
          <Skills />
-        <Contact />
       </div>
       <FloatingActions />
      

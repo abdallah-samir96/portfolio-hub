@@ -1,6 +1,7 @@
 function Experience() {
     const experience = [
         {
+            key: 1,
             year: '2025 - Present',
             brief: 'Industry: Construction Tech | Smart Building Automation',
             title: 'Software Engineer - Squadio (Whitehelmet).',
@@ -8,6 +9,7 @@ function Experience() {
             stack: ["Java", "Spring Boot", "Kotlin", "Oracle OCI", "OAuth2", "OIDC", "Keycloak", "Camunda", "Spring Data JPA", "Spring Security", "Kubernates", "Docker"]
         },
         {
+            key: 2,
             year: '2024 - 2025',
             brief: 'Driven by the market challenges and need for a smart revenue cycle management solutions in the fast-paced digitized healthcare sector, established a constructive revenue cycle management in both the private & public healthcare sectors across the GCC.',
             title: 'Software Developer - Santechture.',
@@ -15,6 +17,7 @@ function Experience() {
             stack: ["Java", "HL7", "Apache Kafka", "Spring Boot", "React", "Postgresql", "Redis for Caching", "Keycloak",  "Gitlab Pipeline", "Docker", "Dependency Manager"]
         },
         {
+            key: 3,
             year: '2022 - 2024',
             brief: 'Coral is the cutting-edge platform for healthcare in US that serve customers in the healthcare field.',
             title: 'Software Engineer - Coral Technology',
@@ -33,7 +36,7 @@ function Experience() {
                         <small>{e.year}</small>
                         <p className="fw-bold">{e.brief}</p>
                         <p>{e.description}</p>
-                        <p>{e.stack.map(element=> {return <span className="badge text-bg-success m-2 p-2">{element}</span>})}</p>
+                        <p>{e.stack.map((element, index)=> {return <span key={index} className="badge skill-badge m-2">{element}</span>})}</p>
                     </div>
                 ))}
             </div>
