@@ -1,17 +1,37 @@
+import { TypeAnimation } from "react-type-animation";
+import '../styles/Profile.css'
+
 function Profile() {
+    const animationSequence = [
+        'Software Engineer',
+        2000,
+        'FullStack Developer (Java, Kotlin, React, ...',
+        2000,
+        'Software Developer',
+        2000,
+        'Java Developer With LTS Versions',
+        2000,
+        'Backend Developer',
+        2000,
+        'Enterprise Backend Developer',
+        2000
+    ]
     return (
         <section className="hero">
             <div className="container text-center">
                 <h1 className="display-3 fw-bold">Abdallah Samir</h1>
-                <p className="lead">
-                    Senior Software Engineer | Java • Spring Boot • React • Microservices
-                </p>
+                <TypeAnimation className="hero-profile-roles"
+                    sequence={animationSequence}
+                    wrapper="span"
+                    speed={50}
+                    repeat={Infinity}
+                />
                 <div className="mt-4">
-                    <a className="btn btn-primary m-2" href="mailto:abdallahsameer22@gmail.com">
-                        Contact Me
+                    <a className="btn btn-primary m-2" href="#contacts-details">
+                        Contacts Details
                     </a>
                     <a className="btn btn-outline-light m-2" download href="../resources/Abdallah_Samir_Software_Engineer.pdf">
-                        Download CV
+                        Download Resume
                     </a>
                 </div>
 

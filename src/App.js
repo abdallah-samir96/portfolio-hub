@@ -2,11 +2,11 @@ import { useSelector } from 'react-redux';
 import Projects from './components/Projects';
 import Experience from './components/Experience';
 import Contact from './components/Contact';
-import Skills from './components/Skills';
 import About from './components/About'
 import Nav from './components/Nav';
 import Profile from './components/Profile';
 import FloatingActions from './components/FloatingActions';
+import Skills from './components/Skills';
 
 export default function App() {
   const { dark } = useSelector(s => s.profile);
@@ -19,10 +19,11 @@ export default function App() {
         <About />
         <Experience />
         <Projects />
-        <Skills />
+         <Skills />
         <Contact />
       </div>
       <FloatingActions />
+     
     </div>
   )
 }

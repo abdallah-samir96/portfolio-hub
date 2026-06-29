@@ -1,6 +1,6 @@
 function Contact() {
     return (
-        <section>
+        <section id = "contacts-details">
             <h2 className="section-title">Contact</h2>
             <div className="card shadow border-0 p-4">
                 <form>
