@@ -6,7 +6,7 @@ function Nav() {
     const dispatch = useDispatch();
     return (
         <nav className="navbar navbar-expand-lg shadow-sm sticky-top bg-body">
-            <div className="container" style={{maxHeight: '30px'}}>
+            <div className="container">
                 <a className="navbar-brand fw-bold" href="/">
                     <i className="bi bi-code-slash" style = {{fontSize: '30px'}}></i>
                 </a>

@@ -19,7 +19,8 @@ body{
   min-height:60vh;
   display:flex;
   align-items:center;
-  background:linear-gradient(135deg,#0d6efd,#6610f2);
+  /* background:linear-gradient(135deg,#0d6efd,#6610f2); */
+  background: linear-gradient(135deg, #0e4404, #346410);
   color:white;
 }
 .social a{
@@ -28,8 +29,8 @@ body{
   margin:0 12px;
 }
 .section-title{
-  margin-bottom:25px;
-  font-weight:bold;
+  margin-bottom: 30px;
+  font-weight: bold;
 }
 .timeline{
   background-color: #FFF;
@@ -107,7 +108,7 @@ body{
 }
 /*  */
 .skills-section {
-  margin: 100px 0;
+  margin: 10px 0;
 }
 
 .skill-card {
@@ -133,7 +134,7 @@ body{
   background: #f8f9fa;
   cursor: pointer;
   color: #495057;
-  padding: 8px 14px;
+  padding: 8px 11px;
   border-radius: 30px;
   font-size: 0.9rem;
   font-weight: 500;
@@ -145,4 +146,53 @@ body{
   background: #0d6efd;
   color: #fff;
   border-color: #0d6efd;
+}
+
+
+/*  */
+.certificate-card {
+  border-radius: 20px;
+  overflow: hidden;
+  transition: all 0.35s ease;
+  background: #fff;
+}
+
+.certificate-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.12) !important;
+}
+
+.certificate-image-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.certificate-image {
+  height: 240px;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.certificate-card:hover .certificate-image {
+  transform: scale(1.05);
+}
+
+.certificate-overlay {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.certificate-card h5 {
+  font-size: 1.15rem;
+  line-height: 1.5;
+}
+
+.certificate-card .badge {
+  font-weight: 500;
+}
+
+.certificate-card .btn {
+  padding: 10px 18px;
+  font-weight: 600;
 }

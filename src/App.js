@@ -7,7 +7,8 @@ import Nav from './components/Nav';
 import Profile from './components/Profile';
 import FloatingActions from './components/FloatingActions';
 import Skills from './components/Skills';
-
+import Certificates from './components/Certificates';
+import Image1 from './assets/ITI_Certificate.jpg'
 export default function App() {
   const { dark } = useSelector(s => s.profile);
 
@@ -19,10 +20,11 @@ export default function App() {
         <About />
         <Experience />
         <Projects />
-         <Skills />
+        <Skills />
       </div>
       <FloatingActions />
-     
+      <Certificates />
+      <Contact />
     </div>
   )
 }
